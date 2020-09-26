@@ -58,7 +58,7 @@ body {
 }
 
 .login:hover {
-    background-color:#6a3d7a;
+    background-color: #6a3d7a;
 }
 
 .login__content {
@@ -115,13 +115,13 @@ main {
     width: 100%;
     background: #E3BA65;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.03);
-    border-radius:  0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
     text-align: center;
     transition: all .2s ease-in;
 }
 
 .cart-block .title:hover {
-    background-color:#ffc142;
+    background-color: #ffc142;
 }
 
 .cart-block .title p {
@@ -151,7 +151,7 @@ main {
 }
 
 .messageButton:hover {
-    background-color:#6a3d7a;
+    background-color: #6a3d7a;
 }
 
 .right-block {
@@ -171,26 +171,26 @@ main {
     border-radius: 10px;
 }
 
-#video_holder{
+#video_holder {
     position: relative;
     width: 100%;
     height: 282px;
 }
 
-#overlay{
+#overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 10;
-    background: url('../img/preview.png') no-repeat;   
+    background: url('../img/preview.png') no-repeat;
     background-size: cover;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.overlay:before {
+#overlay:before {
     content: '';
     width: 99px;
     height: 99px;
@@ -202,7 +202,7 @@ main {
     border-radius: 50%;
 }
 
-.overlay:after {
+#overlay:after {
     content: '';
     border: 15px solid transparent;
     border-left: 20px solid #332E3C;
@@ -214,7 +214,58 @@ main {
     border-radius: 2px;
 }
 
-#overlay.o{
+#overlay.o {
+    display: none;
+}
+
+#video-mobile {
+    border-radius: 10px;
+}
+
+#video_holder-mobile {
+    position: relative;
+    width: 100%;
+    height: 282px;
+}
+
+#overlay-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: url('../img/preview.png') no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#overlay-mobile:before {
+    content: '';
+    width: 99px;
+    height: 99px;
+    background-color: #E3BA65;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+#overlay-mobile:after {
+    content: '';
+    border: 15px solid transparent;
+    border-left: 20px solid #332E3C;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+}
+
+#overlay-mobile.o {
     display: none;
 }
 
@@ -239,7 +290,7 @@ main {
 }
 
 .right-block__menu .list .item:hover {
-    background-color:#665485;
+    background-color: #665485;
 }
 
 .right-block__menu .list .item:last-child {
@@ -260,22 +311,28 @@ main {
     .login {
         width: 100%;
     }
+
     .cart-block:nth-child(odd) {
         margin-right: 0;
     }
+
     .cart-block:nth-child(2),
     .cart-block:nth-child(5) {
         margin: 0 20px;
     }
+
     .messageButton {
         font-size: 26px;
     }
+
     .right-block__menu {
         margin-top: 60px;
     }
+
     .right-block {
         margin-bottom: 100px;
     }
+
     .overlay:after {
         left: 51%;
     }
@@ -285,25 +342,32 @@ main {
     .overlay:after {
         left: 51%;
     }
+
     .login {
         width: 100%;
     }
+
     .cart-block:nth-child(odd) {
         margin-right: 20px;
     }
+
     .messageButton {
         font-size: 26px;
     }
+
     .right-block__menu {
         margin-top: 60px;
     }
+
     .right-block {
         margin-bottom: 100px;
     }
+
     .cart-block:nth-child(2),
     .cart-block:nth-child(5) {
         margin: 0;
     }
+
     .cart-block:nth-child(5) {
         margin-right: 20px;
     }
@@ -313,13 +377,16 @@ main {
     .cart-block {
         margin: 0 0 20px 0;
     }
+
     .cart-block:nth-child(odd) {
         margin-right: 0;
     }
+
     .cart-block:nth-child(2),
     .cart-block:nth-child(5) {
         margin: 0 0 20px 0;
     }
+
     .user-block {
         margin-top: 40px;
         justify-content: center;
@@ -330,13 +397,16 @@ main {
     .cart-block {
         margin: 0 0 20px 0;
     }
+
     .cart-block:nth-child(odd) {
         margin-right: 0;
     }
+
     .cart-block:nth-child(2),
     .cart-block:nth-child(5) {
         margin: 0 0 20px 0;
     }
+
     .overlay:after {
         left: 54%;
     }
