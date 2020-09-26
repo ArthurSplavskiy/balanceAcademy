@@ -202,6 +202,10 @@ main {
     border-radius: 50%;
 }
 
+#overlay:hover:before {
+    background-color: #ffc142;
+}
+
 #overlay:after {
     content: '';
     border: 15px solid transparent;
@@ -251,6 +255,10 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
+}
+
+#overlay-mobile:hover:before {
+    background-color: #ffc142;
 }
 
 #overlay-mobile:after {
