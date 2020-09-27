@@ -37,7 +37,7 @@
   <!-- Google fonts -->
 </head>
 
-<body>
+<body id="body">
 
   <!--[if IE]>
       <p>This text you can see only in Internet Explorer</p>
@@ -47,16 +47,29 @@
       <p>You will see this text only in IE9 and more later version</p>
     <![endif]-->
 
+  <div id="mobile-overlay">
+    <div class="right-block__menu">
+      <ul class="list">
+        <li class="item"><a href="#">О нас</a></li>
+        <li class="item"><a href="#">Спикеры</a></li>
+        <li class="item"><a href="#">Спонсорский контент</a></li>
+        <li class="item"><a href="#">Марафоны</a></li>
+        <li class="item"><a href="#">Вебинары</a></li>
+        <li class="item"><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+
   <header class="header">
     <div class="container">
       <div class="header-line">
         <div class="row">
-          <div class="col-md-6 d-flex align-items-center">
+          <div class="col-6 d-flex align-items-center">
             <div class="logo">
               <img src="img/logo.png" alt="Balance Academy">
             </div>
           </div>
-          <div class="col-md-6 d-flex align-items-center">
+          <div class="col-6">
             <div class="user-block">
               <a href="#" class="login" id="login">
                 <div class="login__content">
@@ -64,6 +77,13 @@
                   <p>Личный кабинет</p>
                 </div>
               </a>
+            </div>
+            <div class="b-container d-sm-none">
+              <div id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
           </div>
         </div>
@@ -90,7 +110,13 @@
 
             </div>
 
-            <div class="right-block__menu">
+            <div class="left-block__button d-block d-sm-none">
+
+              <a href="#" class="messageButton">Послание дня</a>
+
+            </div>
+
+            <div class="right-block__menu d-none d-sm-block">
               <ul class="list">
                 <li class="item"><a href="#">О нас</a></li>
                 <li class="item"><a href="#">Спикеры</a></li>
@@ -151,7 +177,7 @@
               </a>
 
             </div>
-            <div class="left-block__button">
+            <div class="left-block__button d-none d-sm-block">
 
               <a href="#" class="messageButton">Послание дня</a>
 

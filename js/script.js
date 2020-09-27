@@ -17,7 +17,19 @@ function play() {
     }
 }
 
-// video mobile
+// burger
 
-
-
+const body = document.getElementById('body')
+const menu = document.getElementById("mobile-overlay")
+menu.classList.add('hide');
+document.getElementById("burger-menu").addEventListener("click", (event) => {
+    if (event.currentTarget.classList.contains("open")) {
+        event.currentTarget.classList.remove("open");
+        menu.classList.add('hide');
+        body.style.overflow = 'scroll';
+    } else {
+        event.currentTarget.classList.add("open");
+        menu.classList.remove('hide');
+        body.style.overflow = 'hidden';
+    }
+});
